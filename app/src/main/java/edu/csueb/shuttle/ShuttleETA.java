@@ -53,12 +53,11 @@ public class ShuttleETA extends AppCompatActivity
     }
 
     /*Method: Initialize*/
-    public void init(){
+    private void init(){
         SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(ShuttleETA.this);
     }
-
 
     @Override
     public void onBackPressed() {
@@ -86,7 +85,7 @@ public class ShuttleETA extends AppCompatActivity
         //4/13/2017
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;    
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -123,7 +122,8 @@ public class ShuttleETA extends AppCompatActivity
         // and move the map's camera to the same location.
         LatLng sydney = new LatLng(37.6577, -122.0564);
         googleMap.addMarker(new MarkerOptions().position(sydney)
-                .title("Marker in Sydney"));
+                .title("Marker in CSUEB"));
+
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }
