@@ -55,12 +55,6 @@ public class ShuttleETA extends AppCompatActivity
         mapFragment.getMapAsync(this);
     }
 
-//    private void init() {
-//        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-//                .findFragmentById(R.id.map);
-//        mapFragment.getMapAsync(this);
-//    }
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
