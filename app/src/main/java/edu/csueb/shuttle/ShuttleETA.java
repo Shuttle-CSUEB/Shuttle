@@ -48,18 +48,16 @@ public class ShuttleETA extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        /* copy from google*/
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+        init();
 
-        mapFragment.getMapAsync(this);
     }
 
-//    private void init() {
-//        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-//                .findFragmentById(R.id.map);
-//        mapFragment.getMapAsync(this);
-//    }
+    /*Method: Initialize*/
+    private void init(){
+        SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(ShuttleETA.this);
+    }
 
     @Override
     public void onBackPressed() {
@@ -125,6 +123,7 @@ public class ShuttleETA extends AppCompatActivity
         LatLng sydney = new LatLng(37.6577, -122.0564);
         googleMap.addMarker(new MarkerOptions().position(sydney)
                 .title("Marker in CSUEB"));
+
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }
