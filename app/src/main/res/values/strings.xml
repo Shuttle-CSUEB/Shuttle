@@ -5,4 +5,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <!-- Google Map API Key: Maulik Shah : AIzaSyC7np_-sGOvlVN433hyMaBxxCe2u_mcSrU -->
+    <string name="google_maps_key">AIzaSyC7np_-sGOvlVN433hyMaBxxCe2u_mcSrU</string>
 </resources>
