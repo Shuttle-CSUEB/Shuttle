@@ -9,6 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+             The API key for Google Maps-based APIs.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
         <activity
             android:name=".ShuttleETA"
             android:label="@string/app_name"
