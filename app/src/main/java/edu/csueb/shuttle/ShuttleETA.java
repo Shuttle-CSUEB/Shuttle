@@ -47,16 +47,11 @@ public class ShuttleETA extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        init();
-
-    }
-
-    /*Method: Initialize*/
-    private void init(){
+        
         SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(ShuttleETA.this);
+
     }
 
     @Override
