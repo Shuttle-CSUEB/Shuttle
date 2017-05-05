@@ -12,4 +12,5 @@
         android:layout_height="match_parent"
         tools:context="edu.csueb.shuttle.ShuttleETA" />
     <!--edited by Xinxin 9:08-->
+    <!-- -->
 </LinearLayout>
