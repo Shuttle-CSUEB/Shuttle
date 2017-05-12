@@ -6,6 +6,12 @@
 
     <string name="action_settings">Settings</string>
 
+    <string name="route_prompt">Choose a Shuttle Route</string>
+    <string-array name="route_arrays">
+        <item>CSUEB to Hayward Bart</item>
+        <item>Hayward Bart to CSUEB</item>
+    </string-array>
+
     <!-- Google Map API Key: Maulik Shah : AIzaSyC7np_-sGOvlVN433hyMaBxxCe2u_mcSrU -->
     <!-- Google Map API Key: Xinxin AIzaSyD3UP_OvgEktf3MrlLHORxch7DZe02oCe4</string> -->
     <string name="google_maps_key">AIzaSyC7np_-sGOvlVN433hyMaBxxCe2u_mcSrU</string>
